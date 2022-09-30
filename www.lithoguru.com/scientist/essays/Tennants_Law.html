@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+<!-- Mirrored from www.lithoguru.com/scientist/essays/Tennants_Law.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 20:10:49 GMT -->
+<head>
+    <!-- meta information for search engines -->
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+   	<meta name="author" content="Chris Mack" />
+   	<meta name="keywords" content="" />
+   	<meta name="robots" content="all" />
+    
+    <!-- site stylesheet (site colors and layout definitions) -->
+    <link rel="stylesheet" type="text/css" href="../../css/structure.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+    
+    <!-- favorite icon -->
+    <link rel="shortcut icon" href="../../lithoguru.ico" />
+    <link rel="icon" href="../../lithoguru.ico" />
+	
+
+   	<meta name="description" content="Tennant's Law (2012) - A lithography essay on the relationship between resolution and throughput, by Chris Mack."/>
+	<title>Tennant's Law, by Chris Mack</title>
+  </head>
+
+  <!-- page header -->
+  <body>
+
+	<div id="header"><a name="top"></a>
+	    <img src="../../images/litho.gif" width="692" height="186" alt="Lithography"/>
+	</div>
+
+    <!-- "Scientist" Navigation Menu -->
+    	<div id="mainNav">
+		<ul id="nav">
+			<li class="first"><a href="../../index.html">Home</a> | </li>
+			<li class="first"><a href="http://life.lithoguru.com/">Blog</a> | </li>
+			<li class="first"><a href="../litho.html">Lithography</a> | 
+		        <ul>
+                    <li class="second"><a href="../lithobasics.html">Basics</a></li>
+				    <li class="second"><a href="../glossary/index-2.html">Glossary</a></li>
+				    <li class="second"><a href="../lithohistory.html">History</a></li>
+				    <li class="second"><a href="../essays.html">Essays</a></li>
+				    <li class="second"><a href="../conferences.html">Conferences</a></li>
+				    <li class="second"><a href="../litholite.html">Personal Side</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../publish.html">Published Works</a> | 
+				<ul>
+				    <li class="second"><a href="../books.html">Books</a></li>
+				    <li class="second"><a href="../papers.html">Technical Papers</a></li>
+				    <li class="second"><a href="../papers-favorites.html">Favorite Papers</a></li>
+				    <li class="second"><a href="../papers-recent.html">Recent Papers</a></li>
+				    <li class="second"><a href="../papers-LER.html">LER Papers</a></li>
+				    <li class="second"><a href="../essays.html">Essays</a></li>
+				    <li class="second"><a href="../tutor.html">Litho Tutors</a></li>
+				    <li class="second"><a href="../science-writing.html">Science Writing</a></li>
+				    <li class="second"><a href="../onlinecourses.html">Online Courses</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../profit.html">For Profit</a> | 
+				<ul>
+				    <li class="second"><a href="../consult.html">Consulting Services</a></li>
+			        <li class="second"><a href="../training.html">Training Services</a></li>
+			        <li class="second"><a href="../expert.html">Expert Witness</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../about.html">About Chris</a>
+				<ul>
+				    <li class="second"><a href="../bio.html">Biography</a></li>
+				    <li class="second"><a href="../resume.html">Resume</a></li>
+				    <li class="second"><a href="../../contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li class="first"> | <a href="../../gentleman/index.html">Gentleman</a></li>
+			<li class="first"> | <a href="../index.html">Scientist</a></li>
+		</ul>
+	</div>
+
+
+
+	<!-- begin wrapper divs -->
+	<div id="mainwrapper">
+		<div id="wrapper">
+            <h1>Tennant's Law</h1>
+            <p style="font-size:12px;">(The following appeared first as  two blog posts (1-5-2012 and 2-7-2012) at <a href="http://life.lithoguru.com/">http://life.lithoguru.com/</a>, and has been modified slightly here.)</p>
+            <p> It&rsquo;s hard to make things small. It&rsquo;s even harder to make things small cheaply. </p>
+            <p> I was recently re-reading Tim Brunner&rsquo;s wonderful paper from 2003, &ldquo;Why optical lithography will live forever&rdquo; [1] when I was reminded of Tennant&rsquo;s Law [2,3]. Don Tennant spent 27 years working in lithography-related fields at Bell Labs, and has been running the Cornell NanoScale Science and Technology Facility (CNF) for the last five. In 1999 he plotted up an interesting trend for direct-write-like lithography technologies: There is a power-law relationship between areal throughput (the area of a wafer that can be printed per unit time) and the resolution that can be obtained. Putting resolution (R) in nm and areal throughput (A<sub>t</sub>) in nm<sup>2</sup>/s, his empirically observed relationship looks like this: </p>
+            <p align="center">A<sub>t</sub> = k<sub>T</sub>R<sup>5</sup></p>
+            <p> where k<sub>T</sub> is Tennant&rsquo;s constant, and was equal to about 4.3 nm<sup>-3</sup>s<sup>-1</sup> in 1995 according to the data Don Tennant collected [2]. Even though the proportionality constant (4.3) represents a snapshot of technology capability circa 1995, this is not a good trend. When cutting the resolution in half (at a given level of technology capability), the throughput decreases by a factor of 32. Yikes. That is not good for manufacturing. </p>
+            <p><strong> Why the Power of 5? </strong></p>
+            <p> What&rsquo;s behind Tennant&rsquo;s Law, and is there any way around it? The first and most obvious problem with direct-write lithography is the pixel problem. Defining one pixel element as the resolution squared, a constant rate of writing pixels will lead to a throughput that goes as R<sup>2</sup>. In this scenario, we always get an areal throughput hit when improving resolution just because we are increasing the number of pixels we have to write. Dramatic increases in pixel writing speed must accompany resolution improvement just to keep the throughput constant. </p>
+            <p> But Tennant&rsquo;s Law shows us that we don&rsquo;t keep the pixel writing rate constant. In fact, the pixel throughput (A<sub>t</sub>/R<sup>2</sup>) goes as R<sup>3</sup>. In other words, writing a small pixel takes much longer than writing a big pixel. Why? While the answer depends on the specific direct-write technology, there are two general reasons. First, the sensitivity of the photoresist goes down as the resolution improves. For electron-beam lithography, higher resolution comes from using a higher energy (at least to a point), since higher-energy electrons exhibit less forward scattering, and thus less blurring within the resist. But higher-energy electrons also transfer less energy to the resist, thus lowering resist sensitivity. The relationship is fundamental: scattering, the mechanism that allows an electron to impart energy to the photoresist, also causes a blurring of the image and a loss of resolution. Thus, reducing the blurring to improve resolution necessarily results in lower sensitivity and thus lower throughput. </p>
+            <p> (As an aside, higher electron energy results in greater backscattering, so there is a limit to how far resolution can be improved by going to higher energy.) </p>
+            <p> Chemically amplified (CA) resists have their own throughput versus resolution trade-off. CA resists can be made more sensitive by increasing the amount of baking done after exposure. But this necessarily results in a longer diffusion length of the reactive species (the acid generated by exposure). The greater sensitivity comes from one acid (the result of exposure) diffusing around and finding multiple polymer sites to react with, thus &ldquo;amplifying&rdquo; the effects of exposure and improving sensitivity. But increased diffusion worsens resolution &ndash; the diffusion length must be kept smaller than the feature size in order to form a feature. </p>
+            <p> Charged particle beam systems have another throughput/resolution problem: like charges repel. Cranking up the current to get more electrons to the resist faster (that is, increasing the electron flux) crowds the electrons together, increasing the amount of electron-electron repulsion and blurring the resulting image. These space-charge effects ultimately doomed the otherwise intriguing SCALPEL projection e-beam lithography approach [4]. </p>
+            <p> The second reason that smaller pixels require more write time has to do with the greater precision required when writing a small pixel. Since lithography control requirements scale as the feature size (a typical specification for linewidth control is &plusmn;10%), one can&rsquo;t simply write a smaller pixel with the same level of care as a larger one. And it&rsquo;s hard to be careful and fast at the same time. </p>
+            <p> One reason why smaller pixels are harder to control is the stochastic effects of exposure: as you decrease the number of electrons (or photons) per pixel, the statistical uncertainty in the number of electrons or photons actually used goes up. The uncertainty produces linewidth errors, most readily observed as linewidth roughness (LWR). To combat the growing uncertainty in smaller pixels, a higher dose is required. </p>
+            <p> Other throughput limiters can also come into play for direct-write lithography, such as the data rate (one must be able to supply the information as to which pixels are on or off at a rate at least as fast as the pixel writing rate), or stage motion speed. But assuming that these limiters can be swept away with good engineering, Tennant&rsquo;s Law still leaves us with two important dilemmas: as we improve resolution we are forced to write more pixels, and the time to write each pixel increases. </p>
+            <p> For proponents of direct-write lithography, the solution to its throughput problems lies with multiple beams. Setting aside the immense engineering challenges involved with controlling hundreds or thousands of beams to a manufacturing level of precision and reliability, does a multiple-beam approach really get us around Tennant&rsquo;s Law? Not easily. We still have the same two problems. Every IC technology node increases the number of pixels that need to be written by a factor of 2 over the previous node, necessitating a machine with at least twice the number of beams. But since each smaller pixel takes longer to write, the real increase in the number of beams is likely to be much larger (more likely a factor of 4 rather than 2). Even if the economics of multi-beam lithography can be made to work for one technology node, it will look very bad for the next technology node. In other words, writing one pixel at a time does not scale well, even when using multiple beams. </p>
+            <p><strong> Tennant&rsquo;s Law for Optical Lithography </strong></p>
+            <p>The power of 5 from Tennant&rsquo;s Law comes from two sources: (1) areal throughput is equal to the pixel throughput times R<sup>2</sup>, and (2) pixel throughput is proportional to the volume of a voxel (a three-dimensional pixel), R<sup>3</sup>. The first part is a simple geometrical consideration: for a given time required to write one pixel, doubling the number of pixels doubles the write time. It&rsquo;s the second part that fascinates me: the time to write a voxel is inversely proportional to the volume of the voxel. It takes care to write something small, and it&rsquo;s hard to be careful and fast at the same time. </p>
+            <p>The implication for direct write is clear: the economics of writing small features is very bad. Granted, Tennant&rsquo;s constant increases over time as our technology improves, but it has never increased nearly fast enough for high resolution direct-write lithography to make up for the R<sup>5</sup> deficit. </p>
+            <p>But does Tennant&rsquo;s Law apply to optical lithography? Yes, and no. Unlike direct-write lithography, in optical lithography we write a massive number of pixels at once: parallel processing versus serial processing. That makes Tennant&rsquo;s constant very large (and that&rsquo;s a good thing), but is the scaling any different? </p>
+            <p>For a given level of technology, the number of pixels that can fit into an optical field of a projection lens is roughly constant. Thus, a lower-resolution lens with a large field size can be just as difficult to make as a higher-resolution lens with a small field size if the number of pixels in the lens field is the same. That would give an R<sup>2</sup> dependence to the areal throughput, just like for direct write (though, again, Tennant&rsquo;s constant will be much larger for projection printing). </p>
+            <p>But is there a further R<sup>3</sup> dependence to printing small pixels for optical projection printing, just as in electron-beam and other direct-write technologies? Historically, the answer has been no. Thanks to significant effort by lithography tool companies (and considerable financial incentives as well), the highest resolution tools also tend to have the fastest stages, wafer handling, and alignment systems. And historically, light sources have been bright, so that resist sensitivity (especially for chemically amplified resists) has not been a fundamental limit to throughput. </p>
+            <p>But all that is changing as the lithography community looks to Extreme UV (EUV) lithography. EUV lithography has the highest resolution, but it is slow. Painfully slow, in fact. Our EUV sources are not bright, so resist sensitivity limits throughput. And resist sensitivity for EUV, as it turns out, is a function of resolution.<strong></strong></p>
+            <p>For some time now, researchers in the world of EUV lithography have been talking about the &ldquo;RLS trade-off&rdquo;: the unfortunate constraint that it is hard to get simultaneously high resolution (R), low line-edge roughness (L), and good resist sensitivity (S, the dose required to properly expose the resist). Based on scaling arguments and empirical evidence, Tom Wallow and coworkers have found that, for a given level of resist technology [5], <strong></strong></p>
+            <p align="center"><em> </em>R<sup>3</sup>L<sup>2</sup>S = constant </p>
+            <p>Since throughput is limited by the available intensity from the EUV source, we find that, for a fixed amount of LER, </p>
+            <p align="center"><em> Throughput ~ </em> 1<em>/</em>S<em> ~ </em>R<sup>5</sup></p>
+            <p>Finally, since the number of pixels in a lens field is fixed, the areal throughput will be<strong></strong></p>
+            <p align="center"> A<sub>t</sub> ~ (lens field size) R<sup>3</sup> ~ R<sup>5</sup></p>
+            <p>Thus, like direct-write lithographies, EUV lithography obeys Tennant&rsquo;s law. This is bad news. This means that EUV will suffer from same disastrous economics as direct-write lithography: shrinking the feature size by a factor of 2 produces a factor of 32 lower throughput. </p>
+            <p>Ah, but the comparison is not quite fair. For projection lithography, Tennant&rsquo;s constant is not only large, it increases rapidly over time. Tim Brunner first noted this in what I call Brunner&rsquo;s Corollary [1]: over time, optical lithography tends to increase Tennant&rsquo;s constant at a rate that more than makes up for the R<sup>2</sup> dependence of the lens field size. As a result, optical lithography actually increases areal throughput while simultaneously improving resolution for each new generation of technology. Roughly, it seems that Tennant&rsquo;s constant has been inversely proportional to about R<sup>2.5</sup> as R shrank with each technology node. </p>
+            <p>But that was before EUV, and before the R<sup>3</sup> dependence of the RLS trade-off kicked in. At best, we might hope for an effective Tennant&rsquo;s law over time that sees throughput go as R<sup>2</sup>. This is still very bad. This means that for every technology node (when feature sizes shrink by 70%) we&rsquo;ll need our source power to double just to keep the throughput constant. The only way out of this dilemma is to break the RLS &ldquo;triangle of death&rdquo; so that resolution can improve without more dose and worse LER. </p>
+            <p>Is the RLS trade-off breakable? Can LER be lowered without using more dose? This is a topic receiving considerable attention and research effort today. We&rsquo;ll have to stay tuned over the next few years to find out. But for all the risks involved with EUV lithography for semiconductor manufacturing , we can add one more: Tennant&rsquo;s law.</p>
+            <p> [1] T. A. Brunner, &ldquo;Why optical lithography will live forever&rdquo;, JVST B 21(6), p. 2632 (2003). </p>
+            <p> [2] Donald M. Tennant, Chapter 4, &ldquo;Limits of Conventional Lithography&rdquo;, in Nanotechnology, Gregory Timp Ed., Springer (1999) p. 164. </p>
+            <p> [3] Not to be confused with Roy Tennant&rsquo;s Law of Library Science: &ldquo;Only librarians like to search, everyone else likes to find.&rdquo; </p>
+            <p>[4] J.A. Liddle, et al., &ldquo;Space-charge effects in projection electron-beam lithography: Results from the SCALPEL proof-of-lithography system&rdquo;, JVST B 19(2), p. 476 (2001). </p>
+            <p>[5] Thomas Wallow, <em>et al</em>., &ldquo;Evaluation of EUV resist materials for use at the 32 nm half-pitch node&rdquo;, Proc. SPIE 6921, 69211F (2008). </p>
+            <p>&nbsp;</p>
+            <p><em>Chris Mack is a writer in Austin, Texas. </em></p>
+            <p align="center"> &copy; Copyright 2012, Chris Mack.
+                <!-- page content -->
+            </p>
+
+            <!-- page footer -->
+     		<div class="clearing">&nbsp;</div>
+	    </div>
+	</div>
+    <!-- end wrapper divs -->
+
+    <!-- page footer, copyrights, etc. -->
+    	<div id="footer">
+		<div id="copyrights">
+			<small>&copy; 2006-2020 Chris A. Mack | <a href="#top">Back to top</a></small>
+		</div>
+	</div>
+
+<script src="../../ssi/navMenu.js" type="text/javascript"></script>
+</body>
+
+<!-- Mirrored from www.lithoguru.com/scientist/essays/Tennants_Law.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 20:10:49 GMT -->
+</html>
+
+

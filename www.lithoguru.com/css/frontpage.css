@@ -1,0 +1,163 @@
+html, body, table {
+	color:#002c43;
+	font:normal 10pt/10pt arial, helvetica, verdana, sans serif;
+	min-height: 100%;
+	width: 99.5%;
+	height: 100%
+}
+
+body {
+    margin: 0;
+	background:#F6F0D6;
+}
+
+table {
+	background:#F6F0D6;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+td {
+	background:#F6F0D6;
+	height: 100%;
+	text-align: center;
+} 
+
+#container {
+	background:#F6F0D6;
+	/*background:#eeeeee url("../images/bgtile.gif");*/
+	position: relative;
+	margin: 0 auto;
+	width: 99%;
+}
+
+#headerText{
+	width:auto;
+	height:auto;
+	margin: 0 auto;
+}
+#gentleman{
+	text-align: right;
+	float:left;
+	width:50%;
+	height:auto;
+}
+#gplacement{
+	padding:5px 20px 5px 0px;
+}
+#scientist{
+	border-top:1px #ffffff white;
+	text-align: left;
+	margin-left:50%;
+	height:auto;
+}
+#splacement{
+	padding:5px 0px 0px 20px;
+}
+#contact{
+	text-align: center;
+	/*background:transparent url("../images/cmack.gif") no-repeat;*/
+	clear:both;
+	margin:20px 20px 5px 20px;
+	/*width:342px;
+	height:70px;*/
+}
+#contact h1{
+	font: normal 18pt/53pt 'times new roman', serif;
+	margin:0px;
+	padding:0px;
+}
+#copyright{
+	clear:both;
+	font: normal 8pt arial, helvetica, verdana, sans serif;
+	float:center;
+}
+
+h1{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#000000;
+}
+h2{
+	color:#002c43;
+	font: bold 19pt/22pt arial, helvetica, verdana, sans serif;
+}
+a:link {
+	text-decoration: underline;
+	color:#002c43;
+  	}
+a:visited {
+	text-decoration: underline;
+	color:#002c43;
+	}
+a:hover, a:active {
+	text-decoration: underline;
+	color:#002c43;
+	}
+
+/*===============
+  nav starts here
+  ===============*/
+/*
+ul {
+	list-style: none;
+}
+ul#nav{
+	margin:0px;
+	padding:0px;
+}
+ul#nav2{
+	margin:0px;
+	padding:0px;
+}
+
+li li a {
+	display: block;
+}
+li li a:hover {
+	padding:0px;
+	margin:0px;
+}
+li{
+	padding:0px;
+	margin:0px;
+	width: auto;
+}
+li.first {
+	display:inline;
+	position: relative;
+	text-align: left;
+	cursor: default;
+}
+li.second{
+	margin:0px;
+	padding:5px 5px 0px;
+	text-align:left;
+	border:1px solid #F6F0D6;
+}
+li ul {
+	display: none;
+	position: absolute;
+	top:1em;
+	left: 0;
+	z-index:1;
+	width:auto;
+	margin:0px;
+	padding: 0.5em 0 10px 0;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #333333;
+	border-bottom:1px solid #999999;
+	background:#F6F0D6 url("../images/bgcolor.gif");
+}
+ul>li .second{
+	top:1em;
+	left: 0;
+}
+li li {
+	float: none;
+	border: 0;
+}
+li:hover ul, li.over ul {
+	display: block;
+}*?

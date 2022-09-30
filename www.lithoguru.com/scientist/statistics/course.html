@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+<!-- Mirrored from www.lithoguru.com/scientist/statistics/course.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 21:11:08 GMT -->
+<head>
+    <!-- meta information for search engines -->
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+   	<meta name="author" content="Chris Mack" />
+   	<meta name="keywords" content="" />
+   	<meta name="robots" content="all" />
+    
+    <!-- site stylesheet (site colors and layout definitions) -->
+    <link rel="stylesheet" type="text/css" href="../../css/structure.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+    
+    <!-- favorite icon -->
+    <link rel="shortcut icon" href="../../lithoguru.ico" />
+    <link rel="icon" href="../../lithoguru.ico" />	
+
+
+    <meta name="description" content="Course materials for From Data to Decisions: Measurement, Uncertainty, Analysis, and Modeling, a graduate course at UT Austin by Chris Mack." />
+    <title>Online Statistics Course Materials</title>
+  </head>
+  
+  <!-- page header --> 
+  <body>
+  
+    <div id="header"><img src="../../images/training.gif" alt="Education" height="186" width="692"/> </div>
+    <!-- "Scientist" Navigation Menu -->
+    	<div id="mainNav">
+		<ul id="nav">
+			<li class="first"><a href="../../index.html">Home</a> | </li>
+			<li class="first"><a href="http://life.lithoguru.com/">Blog</a> | </li>
+			<li class="first"><a href="../litho.html">Lithography</a> | 
+		        <ul>
+                    <li class="second"><a href="../lithobasics.html">Basics</a></li>
+				    <li class="second"><a href="../glossary/index-2.html">Glossary</a></li>
+				    <li class="second"><a href="../lithohistory.html">History</a></li>
+				    <li class="second"><a href="../essays.html">Essays</a></li>
+				    <li class="second"><a href="../conferences.html">Conferences</a></li>
+				    <li class="second"><a href="../litholite.html">Personal Side</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../publish.html">Published Works</a> | 
+				<ul>
+				    <li class="second"><a href="../books.html">Books</a></li>
+				    <li class="second"><a href="../papers.html">Technical Papers</a></li>
+				    <li class="second"><a href="../papers-favorites.html">Favorite Papers</a></li>
+				    <li class="second"><a href="../papers-recent.html">Recent Papers</a></li>
+				    <li class="second"><a href="../papers-LER.html">LER Papers</a></li>
+				    <li class="second"><a href="../essays.html">Essays</a></li>
+				    <li class="second"><a href="../tutor.html">Litho Tutors</a></li>
+				    <li class="second"><a href="../science-writing.html">Science Writing</a></li>
+				    <li class="second"><a href="../onlinecourses.html">Online Courses</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../profit.html">For Profit</a> | 
+				<ul>
+				    <li class="second"><a href="../consult.html">Consulting Services</a></li>
+			        <li class="second"><a href="../training.html">Training Services</a></li>
+			        <li class="second"><a href="../expert.html">Expert Witness</a></li>
+				</ul>
+			</li>
+			<li class="first"><a href="../about.html">About Chris</a>
+				<ul>
+				    <li class="second"><a href="../bio.html">Biography</a></li>
+				    <li class="second"><a href="../resume.html">Resume</a></li>
+				    <li class="second"><a href="../../contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li class="first"> | <a href="../../gentleman/index.html">Gentleman</a></li>
+			<li class="first"> | <a href="../index.html">Scientist</a></li>
+		</ul>
+	</div>
+
+
+    <!-- begin wrapper divs -->
+    <div id="mainwrapper">
+      <div id="wrapper">
+        <h1><strong>From Data to Decisions</strong>: Measurement, Uncertainty, Analysis, and Modeling</h1>
+        <h2 style="font-size: 16px">CHE 379/384, Chris Mack, The University of Texas at Austin </h2>
+        <p>&nbsp;</p>
+        <p style="font-weight: bold">Data Sets for use in this class: </p>
+        <blockquote>
+          <p>Univariate data sets: <a href="Data_Sets_1.xlsx">Data_Sets_1.xlsx</a></p>
+          <p>Bivariate and multivariate data sets: <a href="Data_Sets_2.xlsx">Data_Sets_2.xlsx</a></p>
+          <p>Time series data sets: <a href="Data_Sets_3.xlsx">Data_Sets_3.xlsx</a></p>
+          <p>More bivariate and multivariate data sets: <a href="Data_Sets_4.xlsx">Data_Sets_4.xlsx</a></p>
+          <p>Data sets for Design of Experiments: <a href="Design%20of%20Experiments.xlsx">Design of Experiments.xlsx</a></p>
+          <p><a href="Body%20Fat.xlsx">Body Fat.xlsx</a>, <a href="bodyfat-reduced.csv">bodyfat-reduced.csv</a>,  <a href="Model%20Building%20-%20Used%20Car%20Value.xlsx">Model Building - Used Car Value.xlsx</a></p>
+        </blockquote>
+        <p>&nbsp;</p>
+        <p><strong>Course materials, by class date for the Fall 2018 semester</strong></p><br />
+        <p><strong>Thursday, August 30</strong></p>
+        <p>Lecture 0: <a href="https://www.youtube.com/watch?v=JtKK-ERCBI4">Introduction</a> (10 min) - hardcopy of the slides: <a href="Introduction.pdf">Introduction.pdf</a> </p>
+        <blockquote>
+          <p><em>Getting started with R:<br />
+          </em>Install R on your computer by going <a href="https://www.r-project.org/">here</a>.<br />
+        Install RStudio on your computer by going <a href="https://www.rstudio.com/">here</a> (there is a free version). <br />
+        A script to use as an Introduction: <a href="Introduction%20demo.R">Introduction demo.R</a><br />
+        Some training videos: <a href="https://stat.utexas.edu/videos/r">https://stat.utexas.edu/videos/r</a></p>
+        </blockquote>
+        <p><strong>Tuesday, September 4</strong></p>
+        <p>Lecture 1: <a href="https://www.youtube.com/watch?v=BwjBrRJuXhA">The Knowledge Hierarchy</a> (22 min) - hardcopy of the slides: <a href="Lecture1.pdf">Lecture1.pdf</a> </p>
+        <p>Read this this document: <a href="Example%20data-to-decision%20process.pdf">The Knowledge Hierarchy and the Data to Decision Process</a></p>
+        <p>Lecture 2: <a href="https://www.youtube.com/watch?v=m5f2dR9BRWM">Data and Measurement</a> (24 min) - hardcopy of the slides: <a href="Lecture2.pdf">Lecture2.pdf</a> </p>
+        <p>Lecture 3: <a href="https://www.youtube.com/watch?v=kLjQihp5T-g">Data Example</a> (11 min) - hardcopy of the slides: <a href="Lecture3.pdf">Lecture3.pdf</a> </p>
+        <p><strong>Thursday, September 6 </strong></p>
+        <p>Homework #1 (due in one week): <a href="HW1_Linear%20Regression%20in%20Excel.pdf">HW1_Linear
+            Regression in Excel.pdf</a>; <a href="HW1_Data.xls">HW1_Data.xls</a></p>
+		  <p>Homework #1 Solution: <a href="HW1_solutions.xlsx">
+		  HW1_solutions.xlsx</a></p>
+        <p>Lecture 4: <a href="https://www.youtube.com/watch?v=d3jI0NW9zQI">Process Modeling</a> (25 min) - hardcopy of the slides: <a href="Lecture4.pdf">Lecture4.pdf</a></p>
+        <p>Reading: <a href="http://www.itl.nist.gov/div898/handbook/pmd/section1/pmd1.htm">NIST Statistics Handbook</a> </p>
+        <p>Lecture 5: <a href="https://www.youtube.com/watch?v=SIZVsFdr-Zg">Regression Review, part 1</a> (26 min) - hardcopy of the slides: <a href="Lecture5.pdf">Lecture5.pdf</a></p>
+        <p>Lecture 6: <a href="https://www.youtube.com/watch?v=3CHDD_ezgn8">Regression Review, part 2</a> (31 min) - hardcopy of the slides: <a href="Lecture6.pdf">Lecture6.pdf</a></p>
+        <p>Class Summary Notes: <a href="Least-Squares_Regression.pdf">Least-Squares Regression</a> </p>
+        <p>Reading on matrix formulation for OLS: <a href="https://onlinecourses.science.psu.edu/stat501/node/382">Penn State Course</a> </p>
+        <p>Preview - Some fun with R: <a href="descriptive%20statistics%20demo.R">descriptive statistics demo.R</a><br /></p>
+        <p><strong>Tuesday, September 11 </strong></p>
+        <p>Lecture 7: <a href="https://www.youtube.com/watch?v=ur3JwVb0E8o">Appendix: Matrix Math</a> (13 min) - hardcopy of the slides: <a href="Lecture7.pdf">Lecture7.pdf</a></p>
+        <p>Lecture 8: <a href="https://www.youtube.com/watch?v=dc8ZQjTVQJ8">Regression Review, part 3</a> (14 min) - hardcopy of the slides: <a href="Lecture8.pdf">Lecture8.pdf</a></p>
+        <p>Lecture 9: <a href="https://www.youtube.com/watch?v=pYCoE_QbfgA">Linear Regression in Excel</a> (19 min) - Excel spreadsheet: <a href="Lecture9.xlsx">Lecture9.xlsx</a></p>
+        <p>Lecture 10: <a href="https://www.youtube.com/watch?v=C1hsNh0ET-M">What is the Distribution of the Residuals?</a> (16 min) - hardcopy of the slides: <a href="Lecture10.pdf">Lecture10.pdf</a></p>
+        <p>Bonus Lecture: <a href="https://www.youtube.com/watch?v=r6HHDfQV9KM">Fun with Histograms</a> (5 min) </p>
+        <p>Bonus Lecture: <a href="https://www.youtube.com/watch?v=HdE-_1J3aQ4">Linear Regression in R</a> (10 min) - <a href="Linear%20Regression.R">Linear Regression.R</a></p>
+        <p>Anscombe's 1973 paper, <a href="Anscombe_Graphs%20in%20Statistical%20Analysis_1973.pdf">Graphs in Statistical Analysis</a>, and a spreadsheet of the data from that paper: <a href="Anscombe_Data.xls">Anscombe_Data.xls</a> </p>
+        <p><strong>Thursday, September 13 </strong></p>
+        <p>Homework #2 (due one week from today): <a href="HW2_QQ%20Plots.pdf">HW2_QQ Plots.pdf</a></p>
+		  <p>Homework #2 Excel Solution:&nbsp; <a href="HW2_solutions.xlsx">
+		  HW2_solutions.xlsx</a></p>
+        <p>Lecture 11: <a href="https://www.youtube.com/watch?v=W2O832IbGHY">Q-Q and Normal Probability Plots</a> (18 min) - hardcopy of the slides: <a href="Lecture11.pdf">Lecture11.pdf</a></p>
+        <p>Reading - Normal Probability Plots: <a href="http://www.itl.nist.gov/div898/handbook/eda/section3/normprpl.htm">http://www.itl.nist.gov/div898/handbook/eda/section3/normprpl.htm</a></p>
+        <p>Lecture 12: <a href="https://www.youtube.com/watch?v=vWa0xX0nT8w">Normal Probability Plots in Excel</a> (19 min): <a href="Lecture12.xlsx">Lecture12.xlsx</a>, <a href="Lecture12b.xlsx">Lecture12b.xlsx</a> </p>
+        <p>Lecture 13: <a href="https://www.youtube.com/watch?v=s2uQjGabqyY">Testing for Skewness</a> (16 min) - hardcopy of the slides: <a href="Lecture13.pdf">Lecture13.pdf</a></p>
+        <p>Lecture 14: <a href="https://www.youtube.com/watch?v=6il3OMmyR5k">Testing for Kurtosis</a> (14 min) - hardcopy of the slides: <a href="Lecture14.pdf">Lecture14.pdf</a></p>
+        <p><strong>Tuesday, September 18 </strong></p>
+        <p>Lecture 15: <a href="https://www.youtube.com/watch?v=zdTr5dnljag">Performing Moment Tests in Excel</a> (16 min): <a href="Lecture15.xlsx">Lecture15.xlsx</a></p>
+        <p>Lecture 16: <a href="https://www.youtube.com/watch?v=Fi6vfz8ApQM">Shipario-Wilk Test for Normality</a> (11 min) - hardcopy of the slides: <a href="Lecture16.pdf">Lecture16.pdf</a></p>
+        <p>Q-Q plots, moment testing, and normality testing in R: <a href="NBS%20Weight%20Data.csv"><br />
+        NBS Weight Data.csv</a>, <a href="qqplot%20moment%20normality%20demo.R">qqplot moment normality demo.R</a></p>
+        <p>Lecture 17: <a href="https://www.youtube.com/watch?v=Ne5c7EbAdR0">Testing for Outliers, part 1</a> (26 min) - hardcopy of the slides: <a href="Lecture17.pdf">Lecture17.pdf</a></p>
+        <p>Lecture 18: <a href="https://www.youtube.com/watch?v=ncqbegn1V6U">Testing for Outliers, part 2</a> (18 min) - hardcopy of the slides: <a href="Lecture18.pdf">Lecture18.pdf</a></p>
+        <p>Reading: <a href="Procedures%20for%20Detecting%20Outlying%20Observations%20in%20Samples_Grubbs_1969.pdf">Procedures for Detecting Outlying Observations in Samples_Grubbs_1969.pdf</a></p>
+        <p>Tables of critical values for the Grubbs' Outlier Tests: <a href="Grubbs%20Test%20Critical%20Values.pdf">Grubbs Test Critical Values.pdf</a></p>
+        <p><strong>Thursday, September 20</strong></p>
+        <p>Homework #3 (due one week from today): <a href="HW3_Moments_Outliers.pdf">HW3_Moments_Outliers.pdf</a></p>
+		  <p>Homework #3 Excel Solution:&nbsp; <a href="HW3_solutions.xlsx">
+		  HW3_solutions.xlsx</a></p>
+        <p>Lecture 19: <a href="https://www.youtube.com/watch?v=FMDbc0v40Rk">Final Thoughts on Outliers</a> (29 min) - hardcopy of the slides: <a href="Lecture19.pdf">Lecture19.pdf</a></p>
+        <p>Lecture 20: <a href="https://www.youtube.com/watch?v=Z71aYeIucmk">Performing Outlier Tests in Excel and R</a> (19 min): <a href="Lecture20.xlsx">Lecture20.xlsx</a>, <a href="Outliers%20demo.R">Outliers demo.R</a></p>
+        <p>Lecture 21: <a href="https://www.youtube.com/watch?v=ZV6OfGgroc0">Leverage in Regression</a> (22 min) - hardcopy of the slides: <a href="Lecture21.pdf">Lecture21.pdf</a></p>
+        <p><strong>Tuesday, September 25</strong></p>
+        <p>Lecture 22: <a href="https://www.youtube.com/watch?v=DUd_soPQf1c">Influence in Regression</a> (20 min) - hardcopy of the slides: <a href="Lecture22.pdf">Lecture22.pdf</a></p>
+        <p>Lecture 23: <a href="https://www.youtube.com/watch?v=lteExwSiZKY">Leverage and Influence in Excel and R</a> (17 min): <a href="Flow%20Rate%20Calibration.csv"><br />
+Flow Rate Calibration.csv</a>, <a href="Influence%20demo.R">Influence demo.R</a>, <a href="Lecture23.xlsx">Lecture23.xlsx</a></p>
+        <p>Lecture 24: <a href="https://www.youtube.com/watch?v=uopIElYtTD8">Heteroscedasticity: When Variance Varies</a> (23 min) - hardcopy of the slides: <a href="Lecture24.pdf">Lecture24.pdf</a></p>
+        <p><strong>Thursday, September 27</strong></p>
+        <p>Homework #4 (due in one week): <a href="HW4_Influence_Scedasticity.pdf">HW4_Influence_Scedasticity.pdf</a></p>
+		  <p>Homework #4 Excel Solution:&nbsp; <a href="HW4_solutions.xlsx">
+		  HW4_solutions.xlsx</a></p>
+        <p>Lecture 25: <a href="https://www.youtube.com/watch?v=IAW-qpWNorI">Testing for Homoscedasticity in Excel and R</a> (15 min): <a href="Lecture25.xlsx">Lecture25.xlsx</a>, <a href="Heteroscedasticity.R">Heteroscedasticity.R</a></p>
+        <p>Lecture 26: <a href="https://www.youtube.com/watch?v=fbuc8Yv_xlE">Correcting for Heteroscedasticity</a> (16 min) - hardcopy of the slides: <a href="Lecture26.pdf">Lecture26.pdf</a></p>
+        <p>Lecture 27: <a href="https://www.youtube.com/watch?v=SI4vyvSUyoU">Data Transformations in R</a> (19 min): <a href="OLS%20and%20four%20Graphs.R">OLS and four Graphs.R</a>, <a href="Box-Cox%20demo.R">Box-Cox demo.R</a></p>
+        <p><strong>Tuesday, October 2</strong></p>
+        <p>Lecture 28: <a href="https://www.youtube.com/watch?v=b-UqUNJJJ5o">Weighted Regression</a> (18 min) - hardcopy of the slides: <a href="Lecture28.pdf">Lecture28.pdf</a></p>
+        <p>Lecture 29: <a href="https://www.youtube.com/watch?v=TIHSZPdLpa4">Weighted Regression in R</a> (8 min) - <a href="Weighted%20regression%20demo.R">Weighted regression demo.R</a></p>
+        <p>Excel Resource - the Real-Statistics Website: <a href="http://www.real-statistics.com/">www.real-statistics.com</a></p>
+        <p>Lecture 30: <a href="https://www.youtube.com/watch?v=mRyDCnMIJ50">Total Regression, part 1</a> (19 min) - hardcopy of the slides: <a href="Lecture30.pdf">Lecture30.pdf</a></p>
+        <p><strong>Thursday, October 4</strong></p>
+        <p>Homework #5 (due in one week): <a href="HW5_Weighted_Total_regression.pdf">HW5_Weighted_Total_regression.pdf</a></p>
+		  <p>Homework #5 Excel Solution:&nbsp; <a href="HW5_solutions.xlsx">
+		  HW5_solutions.xlsx</a></p>
+        <p>Lecture 31: <a href="https://www.youtube.com/watch?v=iVMpQf84fl0">Total Regression, part 2</a> (22 min) - hardcopy of the slides: <a href="Lecture31.pdf">Lecture31.pdf</a></p>
+        <p>Lecture 32: <a href="https://www.youtube.com/watch?v=fAg10e0bZtk">Total Regression, part 3</a> (18 min) - hardcopy of the slides: <a href="Lecture32.pdf">Lecture32.pdf</a></p>
+        <p>Lecture 33: <a href="https://www.youtube.com/watch?v=kXzzlueX3tw">Total Regression in R</a> (19 min):<br />
+          <a href="Total%20Regression_effective%20variance.R">Total Regression_effective variance.R</a>, <a href="Deming%20Regression.R">Deming Regression.R</a></p>
+        <p><strong>Tuesday, October 9</strong></p>
+        <p>Lecture 34: <a href="https://www.youtube.com/watch?v=BA1m6kOfTKY">The Wrong Model</a> (22 min) - hardcopy of the slides: <a href="Lecture34.pdf">Lecture34.pdf</a></p>
+        <p>Lecture 35: <a href="https://www.youtube.com/watch?v=_wA1gz6DtjI">The Wrong Model, part 2</a> (27 min) - hardcopy of the slides: <a href="Lecture35.pdf">Lecture35.pdf</a></p>
+        <p>Lecture 36: <a href="https://www.youtube.com/watch?v=GymU-zaXTnc">Goodness of Fit tests  in R</a> (11 min) - <a href="Regression%20Goodness%20of%20Fit.R">Regression Goodness of Fit.R</a></p>
+        <p><strong>Thursday, October 11</strong></p>
+        <p>Homework #6 (due in one week): <a href="HW6_Autoregression.pdf">HW6_Autoregression.pdf</a></p>
+		  <p>Homework #6 Excel Solution:&nbsp; <a href="HW6_solutions.xlsx">
+		  HW6_solutions.xlsx</a></p>
+        <p>Lecture 37: <a href="https://www.youtube.com/watch?v=ADICTMUvPg0">Independence of Residuals</a> (27 min) - hardcopy of the slides: <a href="Lecture37.pdf">Lecture37.pdf</a></p>
+        <p>Lecture 38: <a href="https://www.youtube.com/watch?v=X6TpT5CtuyE">Residual Independence in Excel and R</a> (18 min) - <a href="Lecture38.xlsx">Lecture38.xlsx</a>, <a href="Lag%20plot%20and%20Runs%20test.R">Lag plot and Runs test.R</a></p>
+        <p>Lecture 39: <a href="https://www.youtube.com/watch?v=LXmDpOxKjdc">Autocorrelation in Time Series</a> (32 min) - hardcopy of the slides: <a href="Lecture39.pdf">Lecture39.pdf</a></p>
+        <p><strong>Tuesday, October 16</strong></p>
+        <p>Lecture 40: <a href="https://www.youtube.com/watch?v=QB89v1EHuP0">Time Series Autocorrelation in Excel and R</a> (24 min):<br />
+        <a href="Lecture40.xlsx">Lecture40.xlsx</a>, <a href="Durbin-Watson%20test.R">Durbin-Watson test.R</a></p>
+        <p>Tables of critical values for the Durbin-Watson Test: <a href="Durbin_Watson_tables.pdf">Durbin_Watson_tables.pdf</a></p>
+        <p>More Durbin-Watson critical values can be found here: <a href="http://web.stanford.edu/~clint/bench/dwcrit.htm">web.stanford.edu/~clint/bench/dwcrit.htm</a></p>
+        <p>Lecture 41: <a href="https://www.youtube.com/watch?v=XbhNT-trvGs">Regression Review</a> (17 min) - hardcopy of the slides: <a href="Lecture41.pdf">Lecture41.pdf</a></p>
+        <p>Review materials for Exam #1: <a href="Exam1_Review.pdf">Exam1_Review.pdf</a></p> 
+        <p>Exam #1  Take-Home piece given out : <a href="Exam1_Take%20Home.pdf">
+		Exam1_Take Home.pdf</a></p>
+        <p><strong>Thursday, October 18</strong></p>
+        <p>Exam #1 (In-Class piece): <a href="Exam1_In%20Class.pdf">Exam1_In 
+		Class.pdf</a></p>
+		  <p>Exam Solutions: <a href="Exam1_Take%20Home_solution.pdf">Exam1_Take 
+		  Home_solution.pdf</a>, <a href="Exam1_In%20Class_solution.pdf">
+		  Exam1_In Class_solution.pdf</a></p>
+        <p><strong>Tuesday, October 23</strong></p>
+        <p>Homework #7 (due in one week): <a href="HW7_Multiple_Regression.pdf">HW7_Multiple_Regression.pdf</a></p>
+		  <p>Homework #7 Excel Solution:&nbsp; <a href="HW7_solutions.xlsx">HW7_solutions.xlsx</a></p>
+		  <p>Homework #7 R Solution:
+		  <a href="HW7_Multiple_Regression_solution.pdf">
+		  HW7_Multiple_Regression_solution.pdf</a></p>
+        <p>Lecture 42: <a href="https://www.youtube.com/watch?v=tGA2XBOICo4">Multiple Regression</a> (23 min) - hardcopy of the slides: <a href="Lecture42.pdf">Lecture42.pdf</a></p>
+        <p>Lecture 43: <a href="https://www.youtube.com/watch?v=40uFLHV5O5I">Comparing Models</a> (17 min) - hardcopy of the slides: <a href="Lecture43.pdf">Lecture43.pdf</a></p>
+        <p>Lecture 44: <a href="https://www.youtube.com/watch?v=Wg1zTkaNTZo">Multiple Regression in Excel and R</a> (21 min):<br />
+        <a href="Lecture44.xlsx">Lecture44.xlsx</a>, <a href="Multiple%20Regression.R">Multiple Regression.R</a>        </p>
+        <p><strong>Thursday, October 25</strong></p>
+        <p>Review of Exam #1 solution</p>
+        <p>Writing Project (Due Nov. 15): <a href="Data%20to%20Decisions%20Writing%20Project.pdf">Data to Decisions Writing Project.pdf</a></p>
+        <p>Lecture 45: <a href="https://www.youtube.com/watch?v=YOlAAHstRI4">Best Subset  Regression</a> (18 min) - hardcopy of the slides: <a href="Lecture45.pdf">Lecture45.pdf</a></p>
+        <p>Lecture 46: <a href="https://www.youtube.com/watch?v=oevjpFdZqmk">Best Subset Regression in R</a> (19 min) - <a href="Best%20Subset%20Model.R">Best Subset Model.R</a></p>
+        <p>Lecture 47: <a href="https://www.youtube.com/watch?v=N4S2nJPw6wU">Multicollinearity</a> (18 min) - hardcopy of the slides: <a href="Lecture47.pdf">Lecture47.pdf</a></p>
+        <p><strong>Tuesday, October 30</strong></p>
+        <p>Homework #8 (due in one week): <a href="HW8_Multicollinearity.pdf">HW8_Multicollinearity.pdf</a><br />
+Paper explaining the data set for HW#8, click <a href="Modeling%20the%20solubility%20of%20aliphatic%20alcohols.pdf">here</a>. </p>
+		  <p>Homework #8 R Solution:
+		  <a href="HW8_Multicollinearity_solution.pdf">
+		  HW8_Multicollinearity_solution.pdf</a></p>
+        <p>Lecture 48: <a href="https://www.youtube.com/watch?v=NoBxOatXQ0k">Standardized Variables</a> (10 min) - hardcopy of the slides: <a href="Lecture48.pdf">Lecture48.pdf</a></p>
+        <p>Lecture 49: <a href="https://www.youtube.com/watch?v=BG6mlodAdx8">Multicollinearity in Excel and R</a> (9 min): <a href="Lecture49.xlsx">Lecture49.xlsx</a>, <a href="Standardized%20Regression.R">Standardized Regression.R</a></p>
+        <p>Lecture 50: <a href="https://www.youtube.com/watch?v=s-GNyYhs5mE">Detecting Multicollinearity</a> (18 min) - hardcopy of the slides: <a href="Lecture50.pdf">Lecture50.pdf</a></p>
+        <p><strong>Thursday, November 1</strong></p>
+        <p>Lecture 51: <a href="https://www.youtube.com/watch?v=5NVcmLZCGOg">Addressing Multicollinearity</a> (14 min) - hardcopy of the slides: <a href="Lecture51.pdf">Lecture51.pdf</a></p>
+        <p>Lecture 52: <a href="https://www.youtube.com/watch?v=QruEcbgfhzo">Detecting Multicollinearity and Ridge Regression in R</a> (24 min): <a href="Lecture49.xlsx"><br />
+        </a><a href="Detecting%20Multicollinearity.R">Detecting Multicollinearity.R</a>, <a href="Ridge%20Regression.R">Ridge Regression.R</a></p>
+        <p>Lecture 53: <a href="https://www.youtube.com/watch?v=Ba4B5VGuvxU">Principal Component Analysis</a> (25 min) - hardcopy of the slides: <a href="Lecture53.pdf">Lecture53.pdf</a></p>
+        <p><strong>Tuesday, November 6</strong></p>
+        <p>Homework #9 (due in one week): <a href="HW9_Logistic_Regression.pdf">HW9_Logistic_Regression.pdf</a>; <a href="HW9.xlsx">HW9.xlsx</a></p>
+		  <p>Homework #9 R Solution:
+		  <a href="HW9_Logistic_Regression_solutions.pdf">
+		  HW9_Logistic_Regression_solutions.pdf</a></p>
+        <p>Lecture 54: <a href="https://www.youtube.com/watch?v=HxUj3MgBRjI">Principal Component Analysis in R</a> (16 min) - <a href="Principal%20Components.R">Principal Components.R</a></p>
+        <p>Lecture 55: <a href="https://www.youtube.com/watch?v=AVDySygkMhM">Robust Estimation</a> (20 min) - hardcopy of the slides: <a href="Lecture55.pdf">Lecture55.pdf</a></p>
+        <p>Lecture 56: <a href="https://www.youtube.com/watch?v=7a_6roLjwaA">Robust Regression</a> (22 min) - hardcopy of the slides: <a href="Lecture56.pdf">Lecture56.pdf</a></p>
+        <p>Lecture 57: <a href="https://www.youtube.com/watch?v=ru-WDbqfSGw">Robust Regression in R</a> (11 min) - <a href="Robust%20Regression.R">Robust Regression.R</a></p>
+        <p><strong>Thursday, November 8</strong></p>
+        <p>Lecture 58: <a href="https://www.youtube.com/watch?v=hc06BXFYd_w">Generalized Linear Modeling</a> (19 min) - hardcopy of the slides: <a href="Lecture58.pdf">Lecture58.pdf</a></p>
+        <p>Lecture 59: <a href="https://www.youtube.com/watch?v=WLf7VqooD6c">Other Regression Topics</a> (17 min) - hardcopy of the slides: <a href="Lecture59.pdf">Lecture59.pdf</a></p>
+        <p>Lecture 60: <a href="https://www.youtube.com/watch?v=kffIgjHxdpw">Generalized Linear Modeling in R</a> (21 min): <a href="Generalized%20Linear%20Modeling.R">Generalized Linear Modeling.R</a></p>
+        <p><strong>Tuesday, November 13</strong></p>
+        <p>Lecture 61: <a href="https://www.youtube.com/watch?v=QyvYrVoZ-sk">Logistic Modeling Example -The sinking of the Titanic</a> (40 min): <a href="Logistic%20Regression.R">Logistic Regression.R</a></p>
+        <p>Lecture 62: <a href="https://www.youtube.com/watch?v=9mRCOnRbGTw">Model Building</a> (26 min) - hardcopy of the slides: <a href="Lecture62.pdf">Lecture62.pdf</a></p>
+        <p>Lecture 63: <a href="https://www.youtube.com/watch?v=1wBa5-q4kkY">Model Building in R</a> (13 min): <a href="Model%20building.R">Model building.R</a></p>
+        <p>2016 Model Building Contest: <a href="Model%20Building%20Contest.pdf">Model Building Contest.pdf</a>, <a href="BlackFridayTrain.csv">BlackFridayTrain.csv</a></p>
+		  <p>2018 Model Building Contest:
+		  <a href="Model%20Building%20Contest%202018.docx">Model Building 
+		  Contest 2018.docx</a>, <a href="Wine%20Quality.csv">Wine Quality.csv</a></p>
+        <p>Model Building Contest entries due Dec. 6 in class. </p>
+        <p><strong>Thursday, November 15</strong></p>
+        <p>Homework #10 (due on Nov. 27): <a href="HW10_DOE.pdf">HW10_DOE.pdf</a></p>
+		  <p>Homework #10 Excel Solution: <a href="HW10_solutions.xlsx">
+		  HW10_solutions.xlsx</a></p>
+		  <p>Homework #10 R Solution: <a href="HW10_DOE_solutions.pdf">
+		  HW10_DOE_solutions.pdf</a></p>
+        <p>Lecture 64: <a href="https://www.youtube.com/watch?v=UTa-6YCqbBA">Introduction to Design of Experiments</a> (26 min) - hardcopy of the slides: <a href="Lecture64.pdf">Lecture64.pdf</a></p>
+        <p>Lecture 65: <a href="https://www.youtube.com/watch?v=5EyzgFRF2fQ">Regression Design</a> (21 min) - hardcopy of the slides: <a href="Lecture65.pdf">Lecture65.pdf</a></p>
+        <p>Lecture 66: <a href="https://www.youtube.com/watch?v=WEnAwYI9bUE">Simple Regression Design in R</a> (11 min):  <a href="DOE%20simple%20example.R">DOE simple example.R</a>, <a href="DOE%20Simple%20Example.xlsx">DOE Simple Example.xlsx</a></p>
+        <p><strong>Tuesday, November 20</strong></p>
+        <p>Lecture 67: <a href="https://www.youtube.com/watch?v=0vQgqIDbXeA">Blocking in Experimental Design</a> (21 min) - hardcopy of the slides: <a href="Lecture67.pdf">Lecture67.pdf</a></p>
+        <p>Lecture 68: <a href="https://www.youtube.com/watch?v=OvnA1vq8vKQ">Factorial Design of Experiments</a> (30 min) - hardcopy of the slides: <a href="Lecture68.pdf">Lecture68.pdf</a></p>
+        <p>Lecture 69: <a href="https://www.youtube.com/watch?v=23fV7QF9vPM">Analysis of Covariance in R</a> (13 min): <a href="DOE%20analysis%20of%20covariance.R">DOE analysis of covariance.R</a><br /> 
+          <a href="DOE%20Analysis%20of%20Covariance.xlsx">
+        DOE Analysis of Covariance.xlsx</a></p>
+        <p>Lecture 70: <a href="https://www.youtube.com/watch?v=vpIcOOYYw3c">Factorial Design in R</a>  (30 min): <a href="DOE%20Factorial%20Design.R">DOE Factorial Design.R</a>, <a href="FactorialDesign.csv">FactorialDesign.csv</a><br />
+<a href="Factorial%20Designs.xlsx">Factorial Designs.xlsx</a></p>
+        <p><strong>Thursday, November 22</strong></p>
+        <p>No class - Happy Thanksgiving!</p>
+        <p><strong>Tuesday, November 27</strong></p>
+        <p>Lecture 71: <a href="https://www.youtube.com/watch?v=3PW5YTRtt7w">Response Surface Modeling</a> (20 min) - hardcopy of the slides: <a href="Lecture71.pdf">Lecture71.pdf</a></p>
+        <p>Lecture 72: <a href="https://www.youtube.com/watch?v=JsPk0XPbNJA">Final Thoughts on Design of Experiments</a> (18 min) - hardcopy of the slides: <a href="Lecture72.pdf">Lecture72.pdf</a></p>
+        <p>Lecture 73: <a href="https://www.youtube.com/watch?v=s5QWxvLsgLA">Response Surface Modeling in R</a> (14 min): <a href="DOE%20Response%20Surface.R">DOE Response Surface.R</a></p>
+        <p><strong>Thursday, November 29</strong></p>
+        <p>Review materials for Exam #2: <a href="Exam2_Review.pdf">Exam2_Review.pdf</a></p>
+        <p>Exam #2  Take-Home Piece given out: <a href="Exam2_Take%20Home.pdf">
+		Exam2_Take Home.pdf</a></p>
+        <p>Lecture 74: <a href="https://www.youtube.com/watch?v=5tHCQrSL3o0">Bayesian Regression, part 1</a> (26 min) - hardcopy of the slides: <a href="Lecture74.pdf">Lecture74.pdf</a></p>
+        <p>Lecture 75: <a href="https://www.youtube.com/watch?v=RhdCvD4uuPU">Bayesian Regression, part 2</a> (24 min) - hardcopy of the slides: <a href="Lecture75.pdf">Lecture75.pdf</a></p>
+        <p>Lecture 76: <a href="https://www.youtube.com/watch?v=MnfMdTP34No">Bayesian Regression, part 3</a> (xx min) - hardcopy of the slides: <a href="Lecture76.pdf">Lecture76.pdf</a></p>
+        <p>Lecture 77: Bayesian Regression in R (xx min): (sorry - not 
+		completed!)</p>
+        <p><strong>Tuesday, December 4</strong></p>
+        <p>Exam #2 (In-Class Piece): <a href="Exam2_In%20Class.pdf">Exam2_In 
+		Class.pdf</a></p>
+		  <p>Exam Solutions: <a href="Exam2_Take%20Home%20-%20Solution.pdf">Exam2_Take 
+		  Home - Solution.pdf</a>, <a href="Exam2_In%20Class%20-%20Solution.pdf">
+		  Exam2_In Class - Solution.pdf</a></p>
+        <p><strong>Thursday, December 6</strong></p>
+        <p>Model Building Contest Results! Here is my R-code solution:
+		<a href="WineQuality.R">WineQuality.R</a></p>
+        <p>Lecture 78: Measurement Uncertainty - hardcopy of the slides: <a href="Lecture78.pdf">Lecture78.pdf</a></p>
+        <p>NIST Technical Note 1297 (1994): <a href="NIST%20tn1297%20-%20Uncertainty%20Guidelines.pdf">Guidelines
+            for Evaluating and Expressing the Uncertainty of NIST Measurement
+            Results</a></p>
+        <p>GUM: <a href="http://www.bipm.org/en/publications/guides/gum.html">Guide
+            to the Expression of Uncertainty in Measurement</a></p>
+        <p>Lecture 79: Propagation of Uncertainty - hardcopy of the slides: <a href="Lecture79.pdf">Lecture79.pdf</a></p>
+		  <p>&nbsp;</p>
+		  <p>Final Exam: <a href="Exam_Final.pdf">Exam_Final.pdf</a></p>
+		  <p>Final Exam Solution: <a href="Exam_Final%20-%20Solution.pdf">
+		  Exam_Final - Solution.pdf</a></p>
+        <p>&nbsp;</p>
+        <p>
+          <!-- page footer, copyrights, etc. --> Return to
+		  <a href="index.html">Data To 
+		  Decisions home page</a>.</p>
+      </div>
+    </div>
+    <!-- page footer -->
+    	<div id="footer">
+		<div id="copyrights">
+			<small>&copy; 2006-2020 Chris A. Mack | <a href="#top">Back to top</a></small>
+		</div>
+	</div>
+
+<script src="../../ssi/navMenu.js" type="text/javascript"></script>
+</body>
+
+<!-- Mirrored from www.lithoguru.com/scientist/statistics/course.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 21:51:38 GMT -->
+</html>

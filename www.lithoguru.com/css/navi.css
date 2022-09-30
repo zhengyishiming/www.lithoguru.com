@@ -1,0 +1,74 @@
+#mainNav ul{
+	text-align:center;
+}
+#mainNav li{
+	text-align:left;
+}
+div#mainNav{
+  position:relative;
+  width:704px;
+  margin:auto;
+  padding-bottom:30px;
+	background: #F6F0D6;
+}
+ul {
+	list-style: none;
+}
+ul#nav{
+	margin:0px;
+	padding:0px 0px 5px;
+}
+ul#nav2{
+	margin:0px;
+	padding:0px 0px 5px;
+}
+
+li li a {
+	display: block;
+}
+li li a:hover {
+	padding:0px;
+	margin:0px;
+}
+li{
+	padding:0px;
+	margin:0px;
+	width: auto;
+}
+li.first {
+	display:inline;
+	position: relative;
+	text-align: left;
+	cursor: default;
+	font-size: 15px;
+}
+li.second{
+	margin:0px;
+	padding:0px 5px 4px;
+	text-align:left;
+	border:1px solid #F6F0D6;
+}
+li ul {
+	display: none;
+	position: absolute;
+	top:1.25em;
+	left: 0;
+	z-index:1;
+	width:auto;
+	margin:0px;
+	padding: 0.25em 0 5px 0;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #999999;
+	background:#F6F0D6;
+}
+li li {
+	float: none;
+	border: 0;
+}
+li:hover ul, li.over ul {
+	display: block;
+}
+ol {
+	list-style: decimal
+}
